@@ -4,3 +4,15 @@
     # • Skip any pair where the exponent y is negative.
     # • Store the valid results in a list and print the list.
 
+def power(x, y):
+    return x ** y
+
+pairs = [[5, 2], [3, -1], [4, 3], [2, 0]]
+
+results = []
+
+for x, y  in pairs:
+    if y >= 0:
+        results.append(power(x, y))
+
+print(results)
