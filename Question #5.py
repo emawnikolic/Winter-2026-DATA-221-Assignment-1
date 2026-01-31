@@ -6,14 +6,14 @@
 
 import math
 
-def circle_area_comparison(r1, r2):
-    if not isinstance(r1, int) or not isinstance(r2, int):
+def circle_area_comparison(radius_of_circle_1, radius_of_circle_2):
+    if not isinstance(radius_of_circle_1, int) or not isinstance(radius_of_circle_2, int):
         return "Radii must be integers."
-    if r1 <= 0 or r2 <= 0:
+    if radius_of_circle_1 <= 0 or radius_of_circle_2 <= 0:
         return "Radii must be positive."
 
-    area1 = math.pi * r1**2
-    area2 = math.pi * r2**2
+    area1 = math.pi * radius_of_circle_1**2
+    area2 = math.pi * radius_of_circle_2**2
 
     smaller = min(area1, area2)
     larger = max(area1, area2)
